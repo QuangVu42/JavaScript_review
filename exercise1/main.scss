@@ -1,0 +1,40 @@
+ul,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color:brown;
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    box-shadow: 0px 5px 5px 0px #888888;
+    nav{
+        .header{
+            display: flex;
+            .header_title{
+                color:lawngreen;
+                font-size: 30px;
+                font-weight: 700;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin-left: 50px;
+            }
+            .header_link{
+                display: flex;
+                position: absolute;
+                right: 10%;
+                line-height: 2;
+                li{
+                    margin: 0 20px;
+                }
+            }
+        }
+    }
+}
+main{
+    .container{
+        text-align: center;
+        line-height: 3;
+    }
+}
