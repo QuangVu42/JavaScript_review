@@ -1,0 +1,77 @@
+@import 'setting.scss';
+
+body{
+    .questions{
+        .questions_title{
+            margin-top: 15vh;
+            margin-bottom: 4rem;
+            h2{
+                text-align: center;
+                color: var(--clr-gold);
+                font-family: "Great Vibes", cursive;
+            }
+        }
+        .questions_center{
+            max-width: var(--fixed-width);
+            width: 90vw;
+            margin: 0 auto;
+            .questions_center-question{
+                background:var(--clr-white);
+                border-radius: var(--radius);
+                padding: 1.5rem 1.5rem 0 1.5rem;
+                margin-top: 2rem;
+                box-shadow: var(--light-shadow);
+                .question_content{
+                    display: flex;
+                    text-transform: capitalize;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding-bottom: 1rem;
+                    p{
+                        margin: 0;
+                        letter-spacing: var(--spacing);
+                        color: var(--clr-grey-1);
+                    }
+                    .question_content-btn{
+                        display: block;
+                        background: transparent;
+                        border: transparent;
+                        color: var(--clr-gold);
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                        transition: var(--transition);
+                        .plus{
+                            display: inline;
+                        }
+                        .minus{
+                            display: none;
+                        }
+                    }
+                    .question_content-btn:hover{
+                        transform: rotate(90deg)   
+                    }
+                }
+                .question_text{
+                    display: none;
+                    padding: 1rem 0 1.5rem 0;
+                    border-top:1px solid rgba(0,0,0,0.2) ;
+                }
+            }
+            .show_question{
+                .question_content{
+                    .question_content-btn{
+                        .plus{
+                            display: none;
+                        }
+                        .minus{
+                            display: inline;
+                        }
+                    }
+                }
+                .question_text{
+                    display: block;
+                }
+            }
+        }
+    }
+}

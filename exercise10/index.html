@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--styles-->
+    <link rel="stylesheet" href="index.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Exercise10</title>
+</head>
+<body>
+    <!-- bố cục header: nav+banner , section 1 2 3 4 , footer -->
+    <!--Header-->
+    <header id="home">
+        <nav class="nav">
+            <div class="nav_center">
+                <div class="nav_center-header">
+                    <img src="logo.svg" alt="logo" class="header_logo">
+                    <button class="header_btn"><i class="fas fa-bars"></i></button>
+                </div>
+                <div class="nav_center-links">
+                    <ul class="links">
+                        <li><a href="#home" class="scroll-link home">home</a></li>
+                        <li><a href="#about" class="scroll-link about">about</a></li>
+                        <li><a href="#services" class="scroll-link">services</a></li>
+                        <li><a href="#tours" class="scroll-link">tours</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="banner">
+            <div class="container">
+                <h1>scroll project</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas eos
+                    neque sunt in? Id, necessitatibus quos quisquam distinctio
+                    laudantium fugiat?
+                  </p>
+                <a href="#tours" class="banner_link scroll-link">explore tours</a>
+            </div>
+        </div>
+    </header>
+    <!--About-->
+    <section class="about" id="about">
+        <div class="about_title title">
+            <h2>about<span> us</span></h2>
+        </div>
+    </section>
+    <!--Services-->
+    <section class="services" id="services">
+        <div class="services_title title">
+            <h2>our<span> services</span></h2>
+        </div>
+    </section>
+    <!--Contact-->
+    <section class="tours" id="tours">
+        <div class="contact_title title">
+            <h2>featured<span> tours</span></h2>
+        </div>
+    </section>
+    <!--footer-->
+    <footer>
+        <p>copyright © backroads travel tours company <span class="date"></span>. all rights reserved</p>
+    </footer>
+    <!--Scroll back to top button-->
+    <a href="#home" class="scroll_link scroll-link"><i class="fas fa-arrow-up"></i></a>
+    <script src="index.js"></script>
+</body>
+</html>

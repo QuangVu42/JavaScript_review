@@ -1,0 +1,61 @@
+@import 'setting.scss';
+
+body{
+    .countdown{
+        width: 90vw;
+        max-width: 1700px;
+        margin: 5rem auto;
+        @media screen and (min-width: 992px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            place-items: center;
+            gap: 3rem;
+            width: 95vw;
+        }
+        .countdown_img{
+            margin-bottom: 2rem;
+            @media screen and (min-width: 992px) {
+                margin-bottom: 0;
+            }
+            img{
+                object-fit: cover;
+                height: 20rem;
+                width: 100%;
+            }
+        }
+        .countdown_info{
+            h3{
+                text-transform:uppercase;
+                color: var(--clr-primary-3);
+            }
+            p{
+                margin: 2rem 0;
+                color: var(--clr-grey-6);
+            }
+            .countdown_info-deadline{
+                display: flex;
+                .deadline_format{
+                    background: var(--clr-grey-1);
+                    color: var(--clr-white);
+                    margin-right: 1rem;
+                    width: 5rem;
+                    height: 5rem;
+                    display: grid;
+                    place-items: center;
+                    text-align: center;
+                    h4{
+                        font-size: 2rem;
+                        margin-bottom: 0.25rem;
+                        letter-spacing: var(--spacing);
+                    }
+                    span{
+                        display: block;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        font-size: 0.85rem;
+                    }
+                }
+            }
+        }
+    }
+}

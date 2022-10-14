@@ -1,0 +1,37 @@
+body {
+  background-color: gray;
+}
+
+body header {
+  text-align: center;
+}
+
+body header h1 {
+  font-size: 4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #112d48;
+}
+
+body header div {
+  color: #112d48;
+  font-size: 6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body header button {
+  font-size: 0.875rem;
+  margin: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 10%;
+  border: 1px solid #112d48;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  color: blue;
+}
+
+body header button:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+/*# sourceMappingURL=index.css.map */

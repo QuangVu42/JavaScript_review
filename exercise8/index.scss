@@ -1,0 +1,92 @@
+@import 'setting.scss';
+img:not(.logo) {
+    width: 100%;
+  }
+
+body{
+    .menu{
+        margin: 5rem 0;
+        .menu_title{
+            text-align: center;
+            margin-bottom: 2rem;
+            .underline{
+                width: 5rem;
+                height: 0.25rem;
+                background: var(--clr-gold);
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .menu_option{
+            text-align: center;
+            margin-bottom: 2rem;
+            .menu_option-btn{
+                background: transparent;
+                border-color: var(--clr-gold);
+                font-size: 1rem;
+                text-transform: capitalize;
+                margin: 0.5rem 0.5rem;
+                letter-spacing: 1px;
+                border-radius: var(--radius);
+                padding: 0.375rem 0.75rem;
+                color: var(--clr-gold);
+                cursor: pointer;
+                transition: var(--trasition);
+            }
+            .menu_option-btn:hover{
+                background: var(--clr-gold);
+                color: var(--clr-white);
+            }
+        }
+        // khi chứa nhiều dữ diệu giống nhau thì nên chia gird rồi chưa các khoảng và dùng max-width
+        .menu_content{
+            width: 90vw;
+            margin: 0 auto;
+            max-width: 1170px;
+            display: grid;
+            gap: 3rem 5rem;
+            justify-items: center;
+            @media screen and (min-width: 1200px) {
+                width: 95vw;
+                grid-template-columns: 1fr 1fr;
+                .menu_content-item{
+                    .item_photo{
+                        height: 150px;
+                    }
+                }
+            }
+            .menu_content-item{
+                display: grid;
+                gap: 1rem 2rem;
+                max-width: 25rem;
+                 @media  screen and (min-width:768px) {
+                     grid-template-columns: 225px 1fr;
+                     max-width: 40rem;
+                }
+                .item_photo{
+                    object-fit: cover;//cho ảnh cover đúng khung hình bên ngoài mà không mất tỷ lệ của ảnh
+                    height: 200px;
+                    border: 0.25rem solid var(--clr-gold);
+                    border-radius: var(--radius);
+                }
+                .item_info{
+                    header{
+                        display: flex;
+                        justify-content: space-between;
+                        border-bottom: 0.5px dotted var(--clr-grey-5);
+                        h4{
+                            margin-bottom: 0.5rem;
+                        }
+                        .item_info-price{
+                            color: var(--clr-gold);
+                        }
+                        .item_info-text{
+                            margin-bottom: 0;
+                            padding-top: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
